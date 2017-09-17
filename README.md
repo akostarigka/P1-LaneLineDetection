@@ -28,7 +28,7 @@ Problem solution required the construction of certain auxiliary functions. Namel
 - Outputs:
     * `out_hls_image`: output image in HLS color-space
 
-** Rationale: ** Even though the course prompts the use of RGB color-space, it was proved that this technique was not efficient in more challenging cases (such as challenge.mp4). This raised the need to turn into more effective approaches, such as the HLS color-space approach [(RGB<->HLS)](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_colorspaces/py_colorspaces.html)
+**Rationale:** Even though the course prompts the use of RGB color-space, it was proved that this technique was not efficient in more challenging cases (such as challenge.mp4). This raised the need to turn into more effective approaches, such as the HLS color-space approach [(RGB<->HLS)](http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_colorspaces/py_colorspaces.html)
 
 **Function name:** `moving_average()`
 - Description: This function performs a simple moving average [(SMA)](https://en.wikipedia.org/wiki/Moving_average) of the input data within a given window
@@ -39,7 +39,7 @@ Problem solution required the construction of certain auxiliary functions. Namel
 - Outputs:
     * `mov_av_out`: mean value of the moving window
 
-** Rationale: ** The use of the moving average proved to be an efficient way to smoothen the lane transitions and provide a more robust solution [Ref: [Robust Extrapolation of Lines in Video Using Probabilistic Hough Transform](https://medium.com/@esmat.anis/robust-extrapolation-of-lines-in-video-using-linear-hough-transform-edd39d642ddf)]
+**Rationale:** The use of the moving average proved to be an efficient way to smoothen the lane transitions and provide a more robust solution [Ref: [Robust Extrapolation of Lines in Video Using Probabilistic Hough Transform](https://medium.com/@esmat.anis/robust-extrapolation-of-lines-in-video-using-linear-hough-transform-edd39d642ddf)]
 
 **Function name:** `average_lines()`
 - Description: This function is used to average a set of lines. It separates them according to
@@ -52,7 +52,7 @@ Problem solution required the construction of certain auxiliary functions. Namel
 - Outputs:
     * `out_slopes_intercepts`: slopes and intercepts of both lines
 
-** Rationale: ** This is a common practice of separating left and right lines in the image
+**Rationale:** This is a common practice of separating left and right lines in the image
 
 **Function name:** `extrapolate_line()`
 - Description: This function is used to extrapolate a line of a specific slope and intercept within a specified Y-range
@@ -62,7 +62,7 @@ Problem solution required the construction of certain auxiliary functions. Namel
 - Outputs:
     * Extrapolated line: `[initial_point, end_point]`
 
-** Rationale: ** This is a common way of extrapolating a line given its slope and intercept
+**Rationale:** This is a common way of extrapolating a line given its slope and intercept
 
 **Function name:** `draw_extrapolated_lines()`
 - Description: This function is used to draw the extrapolated lines within the specified Y-range
@@ -73,7 +73,7 @@ Problem solution required the construction of certain auxiliary functions. Namel
 - Outputs:
     * `combined_image`: combination of input image and extrapolated lines  
 
-** Rationale: ** This is a part of the pipeline that will draw the extrapolated lines in the original figure
+**Rationale:** This is a part of the pipeline that will draw the extrapolated lines in the original figure
 
 
 ### 2. Pipeline description.
